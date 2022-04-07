@@ -212,8 +212,13 @@ color: var(--accent-color);
 
 /* Portfolio */
 .portfolio-filter {
-background-color: var(--secondary-background-color);
-color: var(--title-color);
+    border-radius: 4px;
+    margin-bottom: 50px;
+    padding: 6px 22px;
+
+    background-color: var(--secondary-background-color);
+    color: var(--title-color);
+
 font-family: inherit;
 font-weight: 500;
 font-size: 16px;
@@ -228,14 +233,21 @@ background-color: var(--accent-color);
 color: var(--secondary-text-color);
 }
 .portfolio-title {
-color: var(--title-color);
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
 }
 .portfolio-discription {
-color: var(--main-text-color);
-font-size: 16px;
-line-height: 1.8;
+    margin-top: 0; 
+    margin-bottom: 20px;
+
+    color: var(--main-text-color);
+
+    font-size: 16px;
+    line-height: 1.8;
 }
  
