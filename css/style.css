@@ -63,7 +63,6 @@ color: var(--accent-color);
     }
 .contacts-nav .link {
 color: var(--main-text-color);
-outline: 2px solid yellow;
 }
  
 
@@ -111,15 +110,12 @@ outline: 2px solid yellow;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
-    outline: 2px solid teal;
 }
 
 /* section */
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    outline: 2px solid tomato;
   }
 .section:last-child {
     background-color: var(--secondary-background-color);
