@@ -1,0 +1,245 @@
+:root {
+--secondary-background-color: #F5F4FA;
+--main-text-color: #757575;
+--secondary-text-color: #FFFFFF;
+--title-color: #212121;
+--accent-color: #2196F3; }
+
+body {
+
+    background-color: #FFFFFF;
+    font-family:Roboto, sans-serif;
+   }
+
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* header */
+
+.page-header {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.1;
+}
+
+.logo {
+color: #000000;
+font-family: Raleway;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+}
+
+.logo-part {
+color: var(--accent-color);
+}
+.site-nav .link{
+    color: var(--title-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
+    color: var(--accent-color);
+}
+.link.current {
+color: var(--accent-color);
+    }
+.contacts-nav .link {
+color: var(--main-text-color);
+outline: 2px solid yellow;
+}
+ 
+
+/* main */
+
+/* hero */
+
+.hero-button { 
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+   
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+
+    /* line-height: 1.9; 
+    cursor: pointer; */
+
+    /* display: flex;
+    align-items: center;
+     
+    letter-spacing: 0.06em
+    */
+}
+
+.hero {
+    background-color: #2F303A;
+    text-align: center;
+}
+
+.hero-title { 
+    margin-top: 0px;
+    margin-bottom: 30px;
+
+    color: var(--secondary-text-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    outline: 2px solid teal;
+}
+
+/* section */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    outline: 2px solid tomato;
+  }
+.section:last-child {
+    background-color: var(--secondary-background-color);
+}
+
+ .section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    color: var(--title-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+ }
+.section-description {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: var(--title-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase ;
+}
+ .section-text {
+    margin-top: 0;
+
+    color: var(--main-text-color);
+
+    font-size: 14px;
+    line-height: 1.7;
+ }
+
+ /* description of company */
+ 
+ 
+/* company team */
+.employee-names {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    color: var(--title-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+.employee-specialy {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: var(--main-text-color);
+
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+ /* footer */
+.page-footer {
+    background-color: #2F303A;  
+    color: var(--secondary-text-color);
+}
+  
+ .logo-footer {
+color: var(--secondary-text-color);
+font-family: Raleway;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+ }
+.logo-part {
+    color: var(--accent-color);
+}
+.contacts {
+color: var(--secondary-text-color);
+font-style: normal;
+font-size: 14px;
+line-height: 1.7;
+}
+ .contacts:hover,
+ .contacts:focus {
+color: var(--accent-color);
+}
+.contacts-address {
+    color: rgba(255, 255, 255, 0.6);;
+}
+.contacts-address:hover,
+.contacts-address:focus {
+    color: var(--accent-color);
+}
+
+/* Portfolio */
+.portfolio-filter {
+background-color: var(--secondary-background-color);
+color: var(--title-color);
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+letter-spacing: 0.03em;
+cursor: pointer;
+}
+.portfolio-filter:hover,
+.portfolio-filter:focus {
+background-color: var(--accent-color);
+color: var(--secondary-text-color);
+}
+.portfolio-title {
+color: var(--title-color);
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+}
+.portfolio-discription {
+color: var(--main-text-color);
+font-size: 16px;
+line-height: 1.8;
+}
+ 
