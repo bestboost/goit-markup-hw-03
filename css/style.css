@@ -135,7 +135,6 @@ color: var(--main-text-color);
 
 /* section */
 .section {
-    padding-top: 94px;
     padding-bottom: 94px;
   }
 
@@ -151,6 +150,8 @@ color: var(--main-text-color);
     text-align: center;
  }
 .section-description {
+    padding-top: 94px;
+
     margin-top: 0;
     margin-bottom: 10px;
 
