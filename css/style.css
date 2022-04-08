@@ -11,6 +11,7 @@ body {
     font-family:Roboto, sans-serif;
    }
 
+   /* utility */
 .link {
     text-decoration: none;
 }
@@ -30,25 +31,41 @@ body {
 }
 
 /* header */
+.main-nav {
+    display: flex;
+    align-items: center;
 
-.page-header {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.1;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
 }
-
+    
 .logo {
-color: #000000;
-font-family: Raleway;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.2;
+    color: #000000;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
 }
 
 .logo-part {
-color: var(--accent-color);
+    color: var(--accent-color);
+} 
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
 }
+
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+
 .site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-color);
 }
 
@@ -61,6 +78,17 @@ color: var(--accent-color);
 .link.current {
 color: var(--accent-color);
     }
+
+    /* contacts nav */
+.contacts-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-nav .item + .item {
+    margin-left: 50px;
+}
+
 .contacts-nav .link {
 color: var(--main-text-color);
 }
@@ -78,7 +106,6 @@ color: var(--main-text-color);
    
     background-color: var(--accent-color);
     color: var(--secondary-text-color);
-
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
