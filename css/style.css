@@ -113,15 +113,6 @@ color: var(--main-text-color);
     font-weight: 700;
     font-size: 16px;
     text-align: center;
-
-    /* line-height: 1.9; 
-    cursor: pointer; */
-
-    /* display: flex;
-    align-items: center;
-     
-    letter-spacing: 0.06em
-    */
 }
 
 .hero {
@@ -147,10 +138,6 @@ color: var(--main-text-color);
     padding-top: 94px;
     padding-bottom: 94px;
   }
-
-/* .section:last-child {
-    background-color: var(--secondary-background-color);
-} */
 
  .section-title {
     margin-top: 0;
@@ -183,36 +170,64 @@ color: var(--main-text-color);
     line-height: 1.7;
  }
 
- /* description of company */
+  /* description of company */
  .description {
-     display: flex;
+    display: flex;
  }
 
  .description .item {
-     width: 270px;
+    width: 270px;
  }
 
 .description .item + .item {
     margin-left: 30px;
 }
+
+/* activity of company */
+.activity {
+    display: flex;
+    width: 370px;
+}
+
+.activity .item + .item {
+     margin-left: 30px;
+ }
  
 /* company team */
+.team {
+    display: flex;
+ }
+
+.team .item {
+        width: 270px;
+        border-radius: 0px 0px 4px 4px;
+
+        background: #FFFFFF;
+ }
+
+.team .item +.item {
+    margin-left: 30px;
+}
+
+.section.team {
+    background-color: var(--secondary-background-color);
+}
 .employee-names {
+    text-align: center;
     margin-top: 30px;
     margin-bottom: 10px;
-
+  
     color: var(--title-color);
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
 }
 .employee-specialy {
-    margin-top: 0;
-    margin-bottom: 0;
+    text-align: center;
+    margin-top:0;
+    margin-bottom: 30px;
 
     color: var(--main-text-color);
-
     font-size: 16px;
     line-height: 1.2;
 }
@@ -257,6 +272,7 @@ color: var(--accent-color);
 
 .portfolio-filter {
     border-radius: 4px;
+    border: transparent;
     margin-bottom: 50px;
     padding: 6px 22px;
 
@@ -294,7 +310,7 @@ color: var(--accent-color);
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
-    border-bottom: 1px solid #ECECEC;
+    border: 1px solid #EEEEEE;
 }
 
 .element:nth-child(3n) {
@@ -305,6 +321,9 @@ color: var(--accent-color);
     margin-bottom: 0;
 }
 
+.portfolio .item{
+    margin: 20px 24px;
+}
 .portfolio-title {
     margin-top: 0;
     margin-bottom: 4px;
