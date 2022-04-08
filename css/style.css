@@ -52,6 +52,7 @@ body {
     color: var(--accent-color);
 } 
 
+/* navigation */
 .site-nav {
     display: flex;
     margin-left: 93px;
@@ -180,7 +181,17 @@ color: var(--main-text-color);
  }
 
  /* description of company */
- 
+ .description {
+     display: flex;
+ }
+
+ .description .item {
+     width: 270px;
+ }
+
+.description .item + .item {
+    margin-left: 30px;
+}
  
 /* company team */
 .employee-names {
@@ -237,7 +248,9 @@ color: var(--accent-color);
     color: var(--accent-color);
 }
 
-/* Portfolio */
+/* Portfolio.html page */
+
+/* filters */
 .portfolio-filter {
     border-radius: 4px;
     margin-bottom: 50px;
@@ -258,6 +271,20 @@ cursor: pointer;
 .portfolio-filter:focus {
 background-color: var(--accent-color);
 color: var(--secondary-text-color);
+}
+
+.portfolio-filters {
+    display:flex;
+}
+
+.portfolio-filters .item + .item {
+    margin-left: 8px;
+}
+
+/* portfolio */
+.portfolio {
+    display:flex;
+    flex-wrap: wrap;
 }
 .portfolio-title {
     margin-top: 0;
