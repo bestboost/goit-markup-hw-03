@@ -139,7 +139,7 @@ color: var(--main-text-color);
   }
 
  .section-title {
-    margin-top: 0;
+    margin-top: 94px;
     margin-bottom: 50px;
 
     color: var(--title-color);
@@ -274,6 +274,7 @@ color: var(--accent-color);
 .portfolio-filter {
     border-radius: 4px;
     border: transparent;
+    margin-top: 94px;
     margin-bottom: 50px;
     padding: 6px 22px;
 
