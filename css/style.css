@@ -15,12 +15,21 @@ body {
 .link {
     text-decoration: none;
 }
-.list {
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+h1, h2, h3, p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -133,8 +142,14 @@ color: var(--main-text-color);
     text-transform: uppercase;
 }
 
+.hero-content {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 /* section */
 .section {
+    padding-top: 94px;
     padding-bottom: 94px;
   }
 
@@ -149,29 +164,16 @@ color: var(--main-text-color);
     line-height: 1.16;
     text-align: center;
  }
-.section-description {
-    padding-top: 94px;
 
-    margin-top: 0;
-    margin-bottom: 10px;
-
-    color: var(--title-color);
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    text-transform: uppercase ;
-}
- .section-text {
-    margin-top: 0;
-
-    color: var(--main-text-color);
-
-    font-size: 14px;
-    line-height: 1.7;
+ .section .activity {
+     padding-top: 0;
  }
 
+ 
   /* description of company */
+.hidden {
+    visibility: hidden; 
+}
  .description {
     display: flex;
  }
@@ -184,10 +186,26 @@ color: var(--main-text-color);
     margin-left: 30px;
 }
 
+.description-headline {
+    margin-bottom: 10px;
+    
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.description-text {
+    color: var(--main-text-color);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
 /* activity of company */
-.activity {
+.section .activity {
     display: flex;
-    width: 370px;
 }
 
 .activity .item + .item {
@@ -195,11 +213,13 @@ color: var(--main-text-color);
  }
  
 /* company team */
-.team {
-    display: flex;
-    padding-top: 94px;
+.team-section {
+    background-color: var(--secondary-background-color);
  }
 
+.team {
+    display: flex;
+}
 .team .item {
         width: 270px;
         border-radius: 0px 0px 4px 4px;
@@ -211,13 +231,11 @@ color: var(--main-text-color);
     margin-left: 30px;
 }
 
-.section.team {
-    background-color: var(--secondary-background-color);
-}
-.employee-names {
+.employee-name {
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   
     color: var(--title-color);
     font-weight: 500;
@@ -227,8 +245,7 @@ color: var(--main-text-color);
 .employee-specialy {
     text-align: center;
     margin-top:0;
-    margin-bottom: 30px;
-
+  
     color: var(--main-text-color);
     font-size: 16px;
     line-height: 1.2;
@@ -236,6 +253,9 @@ color: var(--main-text-color);
 
  /* footer */
 .page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
     background-color: #2F303A;  
     color: var(--secondary-text-color);
 }
@@ -251,6 +271,7 @@ line-height: 1.2;
     color: var(--accent-color);
 }
 .contacts {
+    margin-top: 30px;
 color: var(--secondary-text-color);
 font-style: normal;
 font-size: 14px;
@@ -268,6 +289,10 @@ color: var(--accent-color);
     color: var(--accent-color);
 }
 
+.footer-contact:not(:last-child) {
+    margin-bottom: 9px;
+}
+
 /* Portfolio.html page */
 
 /* filters */
@@ -275,8 +300,6 @@ color: var(--accent-color);
 .portfolio-filter {
     border-radius: 4px;
     border: transparent;
-    margin-top: 94px;
-    margin-bottom: 50px;
     padding: 6px 22px;
 
     color: var(--title-color);
@@ -297,6 +320,7 @@ color: var(--accent-color);
 .portfolio-filters {
     display:flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .portfolio-filters .item + .item {
@@ -325,10 +349,9 @@ color: var(--accent-color);
 }
 
 .portfolio .item{
-    margin: 20px 24px;
+    padding: 20px 24px;
 }
 .portfolio-title {
-    margin-top: 0;
     margin-bottom: 4px;
 
     color: var(--title-color);
@@ -338,10 +361,8 @@ color: var(--accent-color);
 }
 .portfolio-discription {
     margin-top: 0; 
-    margin-bottom: 20px;
-
+    
     color: var(--main-text-color);
-
     font-size: 16px;
     line-height: 1.8;
 }
