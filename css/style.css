@@ -125,6 +125,9 @@ color: var(--main-text-color);
 }
 
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     background-color: #2F303A;
     text-align: center;
 }
@@ -140,11 +143,6 @@ color: var(--main-text-color);
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-}
-
-.hero-content {
-    padding-top: 200px;
-    padding-bottom: 200px;
 }
 
 /* section */
@@ -171,9 +169,19 @@ color: var(--main-text-color);
 
  
   /* description of company */
-.hidden {
-    visibility: hidden; 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
+
  .description {
     display: flex;
  }
@@ -204,6 +212,9 @@ color: var(--main-text-color);
 }
 
 /* activity of company */
+.activity {
+    padding-top: 0;
+}
 .section .activity {
     display: flex;
 }
@@ -231,19 +242,20 @@ color: var(--main-text-color);
     margin-left: 30px;
 }
 
-.employee-name {
+.employee {
     text-align: center;
-    margin-bottom: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
-  
+}
+.employee-name {
+    margin-bottom: 10px;
+     
     color: var(--title-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
 }
 .employee-specialy {
-    text-align: center;
     margin-top:0;
   
     color: var(--main-text-color);
@@ -271,7 +283,7 @@ line-height: 1.2;
     color: var(--accent-color);
 }
 .contacts {
-    margin-top: 30px;
+    margin-top: 20px;
 color: var(--secondary-text-color);
 font-style: normal;
 font-size: 14px;
